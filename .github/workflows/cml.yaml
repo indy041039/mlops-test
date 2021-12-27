@@ -21,3 +21,6 @@ jobs:
           cml-publish residuals.png --md >> report.md
 
           cml-send-comment report.md
+      - name: test_code
+        run: |
+          pytest -v
